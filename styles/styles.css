@@ -1,0 +1,179 @@
+/* General */
+body {
+  overflow-x: hidden;
+}
+
+/* LOGO */
+.logo img {
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Botón principal */
+.cta-button:hover {
+  background-color: #004b99;
+}
+
+/* BOTÓN CONTACTO */
+.boton-contacto {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 9px 19px rgba(0, 0, 0, 1.0);
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+.boton-contacto:hover {
+  background-color: #0056b3;
+}
+.icono {
+  font-size: 20px;
+}
+
+/* TEXTO HISTORIA */
+.texto-historia {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #1A3C5E;
+  line-height: 1.6;
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* FONDO DE BIENVENIDA */
+.fondo-bienvenida {
+  width: 100vw;
+  height: 60vh;
+  margin: 0;
+  padding: 0;
+  background-image: url('/fondo2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.fondo-bienvenida * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* EFECTO DE ANIMACIÓN */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.zoom-container:hover .zoom-image {
+  transform: scale(1.1);
+}
+.info-block {
+  transition: transform 1s ease;
+}
+.info-block:hover {
+  transform: scale(1.05);
+}
+
+/* TEXTO ESCRIBIÉNDOSE */
+.typing-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid;
+  animation: blinkCursor 0.7s step-end infinite;
+}
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideIn {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* MENÚ RESPONSIVE */
+@media (max-width: 768px) {
+  .hamburguesa {
+    display: flex !important;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .menu-navegacion {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: rgba(10, 50, 90, 0.95);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+
+  .menu-navegacion.activo {
+    display: flex;
+  }
+
+  .menu-navegacion ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .menu-navegacion li {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* DESKTOP: mostrar el menú y ocultar hamburguesa */
+@media (min-width: 769px) {
+  .hamburguesa {
+    display: none !important;
+  }
+
+  .menu-navegacion {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+  }
+}

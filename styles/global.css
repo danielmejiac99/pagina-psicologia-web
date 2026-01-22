@@ -1,0 +1,46 @@
+/* Reset básico y scroll normal */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  /* Importante: NO height: 100% aquí */
+}
+
+/* Contenedor raíz de Next */
+#__next {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  /* Tampoco forzamos height: 100% */
+}
+
+/* Si no usas #root (es más típico en CRA que en Next), puedes omitirlo.
+   Si quieres mantenerlo por compatibilidad, déjalo sin height fija. */
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Animaciones/estilos de Nicole */
+.nicole-photo {
+  will-change: transform, opacity;
+}
+
+/* Estados iniciales se definen en inline-style del componente */
+.nicole-photo-1,
+.nicole-photo-2 {
+  /* vacío a propósito */
+}
+
+/* Al pasar el mouse por la sección, se animan las fotos */
+section:hover .nicole-photo-1,
+section:hover .nicole-photo-2 {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
