@@ -411,7 +411,7 @@ export default function SobreMi() {
                     boxShadow: '0 20px 40px rgba(0,0,0,0.15)'
                 }}>
                      <img 
-                        src="/img_2026.PNG" 
+                        src="/IMG_2026.png" 
                         alt="Terapia Niños" 
                         style={{ 
                             width: '100%', 

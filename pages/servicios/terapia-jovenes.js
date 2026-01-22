@@ -429,7 +429,7 @@ Aborda temas como ansiedad, tristeza, confusión vital, dificultades relacionale
                     boxShadow: '0 20px 40px rgba(0,0,0,0.15)'
                 }}>
                      <img 
-                        src="/img_2027.PNG" 
+                        src="/IMG_2027.png" 
                         alt="Terapia Jovenes" 
                         style={{ 
                             width: '100%', 

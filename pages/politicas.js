@@ -10,6 +10,45 @@ import {
 export default function SobreMi() {
   return (
     <div>
+
+       <style>{`
+        @media (max-width: 900px) {
+          /* Menu Mobile */
+          .desktop-nav { display: none !important; }
+          .mobile-menu-btn { display: block !important; }
+          .mobile-menu-overlay { display: flex !important; }
+
+
+          /* Header */
+          .responsive-header {
+            padding: 10px 20px !important;
+          }
+
+          /* General Text Adjustments */
+          h1, h2, h3 {
+             font-size: 28px !important;
+             line-height: 1.3 !important;
+          }
+          p, li, a {
+             font-size: 16px !important;
+          }
+
+          @media (max-width: 900px) {
+    .hero-carousel-image {
+      display: none !important;
+    }
+  }
+          /* Ajustes de Layout */
+          .responsive-container {
+             padding: 40px 20px !important;
+          }
+        }
+        @media (min-width: 901px) {
+          .mobile-menu-btn { display: none !important; }
+          .mobile-menu-overlay { display: none !important; }
+        }
+      `}</style>
+      
       {/* HEADER */}
       <header
         style={{

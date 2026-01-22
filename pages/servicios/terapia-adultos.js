@@ -409,7 +409,7 @@ Aborda ansiedad, depresión, duelos, rupturas, estrés, crisis existenciales, pa
                     boxShadow: '0 20px 40px rgba(0,0,0,0.15)'
                 }}>
                      <img 
-                        src="/img_2028.PNG" 
+                        src="/IMG_2028.png" 
                         alt="Terapia Adultos" 
                         style={{ 
                             width: '100%', 

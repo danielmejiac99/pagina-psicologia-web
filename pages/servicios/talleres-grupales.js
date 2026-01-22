@@ -410,7 +410,7 @@ export default function SobreMi() {
                     boxShadow: '0 20px 40px rgba(0,0,0,0.15)'
                 }}>
                      <img 
-                        src="/img_2032.PNG" 
+                        src="/IMG_2032.png" 
                         alt="Terapia Adultos" 
                         style={{ 
                             width: '100%', 

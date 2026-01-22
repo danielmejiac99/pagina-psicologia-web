@@ -9,7 +9,7 @@ export default function TeamSection() {
     },
     {
       text: "Somos psicólogas con trayectorias construidas en contextos clínicos, educativos y hospitalarios, lo que nos permite comprender la salud mental desde múltiples dimensiones. Esta diversidad de experiencias sostiene diálogos interdisciplinares y enriquece nuestras intervenciones, haciéndolas más amplias, coherentes y ajustadas a las realidades de quienes confían en nosotras.",
-      image: "/IMG_6202.JPG",
+      image: "/IMG_6202.jpg",
       alt: "Reunión del equipo de psicología",
       align: "right",
     },

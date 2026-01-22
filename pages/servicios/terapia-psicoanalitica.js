@@ -410,7 +410,7 @@ export default function SobreMi() {
                     boxShadow: '0 20px 40px rgba(0,0,0,0.15)'
                 }}>
                      <img 
-                        src="/IMG_2029.PNG" 
+                        src="/IMG_2029.png" 
                         alt="Terapia PSICOANALITICA" 
                         style={{ 
                             width: '100%', 
